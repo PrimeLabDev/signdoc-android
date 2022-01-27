@@ -4,9 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/bg_edittext_fill_selected.xml" value="0.14114583333333333" />
+        <entry key="app/src/main/res/drawable/bg_method_switch.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/input_field_bg.xml" value="0.14114583333333333" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_create_account.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_create_account.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.14635416666666667" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_otp.xml" value="0.25" />

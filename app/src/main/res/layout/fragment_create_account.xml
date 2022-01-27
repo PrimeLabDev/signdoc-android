@@ -44,14 +44,17 @@
         android:layout_marginTop="37dp">
 
         <TextView
+            android:id="@+id/email_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:fontFamily="@font/inter_medium_500"
-            android:text="@string/email"
             android:layout_centerVertical="true"
             android:layout_toStartOf="@id/sep"
-            android:textColor="#475766"/>
+            android:fontFamily="@font/inter_medium_500"
+            android:text="@string/email"
+            android:textColor="#475766"
+            android:textSize="14sp"
+            android:focusedByDefault="true"
+            android:background="@drawable/bg_method_switch"/>
 
         <View
             android:layout_width="20dp"
@@ -68,7 +71,9 @@
             android:text="@string/phone"
             android:layout_toEndOf="@id/sep"
             android:layout_centerVertical="true"
-            android:textColor="#475766"/>
+            android:textColor="#475766"
+            android:id="@+id/phoneText"
+            android:background="@drawable/bg_method_switch"/>
     </RelativeLayout>
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -131,7 +136,8 @@
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
         android:text="@string/by_clicking_continue"
-        android:textColor="#5E6872"/>
+        android:textColor="#5E6872"
+        android:id="@+id/termsText"/>
 
     <View
         android:layout_width="match_parent"
@@ -148,7 +154,8 @@
         android:text="@string/already_have_account"
         android:layout_gravity="center_horizontal"
         android:gravity="center"
-        android:textColor="#5E6872"/>
+        android:textColor="#5E6872"
+        android:id="@+id/login_text"/>
 
 
 </LinearLayout>
