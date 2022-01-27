@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_signdoc"
+        android:layout_marginTop="18dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DFDFE0"
+        android:layout_marginTop="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/create_near"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="49dp"
+        android:fontFamily="@font/inter_medium_500"
+        android:textColor="#1D2C3C"/>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginHorizontal="22dp"
+        android:background="#F5F5F5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:fontFamily="@font/inter_regular_400"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/enter_id"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
+            android:text="@string/full_name"
+            android:layout_marginTop="24dp"
+            android:id="@+id/full_name"
+            android:textColor="#6F6E73"
+            android:layout_marginStart="24dp"/>
+
+       <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/fullName"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="24dp"
+        android:background="@drawable/bg_edittext_fill_selected"
+        android:fontFamily="@font/inter_regular_400"
+        android:hint="@string/full_name_hint"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:paddingHorizontal="14dp"
+        android:textColor="#828282"
+        android:textColorHint="@color/hint_color"
+           android:layout_marginTop="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
+            android:text="@string/account_id"
+            android:layout_marginTop="15dp"
+            android:id="@+id/account_id"
+            android:textColor="#6F6E73"
+            android:layout_marginStart="24dp"
+            android:drawableEnd="@drawable/ic_id"
+            android:drawablePadding="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/EmailPhone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="24dp"
+                android:background="@drawable/bg_edittext_fill_selected"
+                android:fontFamily="@font/inter_regular_400"
+                android:hint="@string/account_hint"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingHorizontal="14dp"
+                android:textColor="#828282"
+                android:textColorHint="@color/hint_color" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#DFDFE0"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="80dp"
+                android:layout_marginVertical="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="35dp"
+                android:fontFamily="@font/inter_medium_500"
+                android:text=".near"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+        </RelativeLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="24dp"
+            android:text="@string/continue_text"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/dark_blue"
+            android:textSize="14sp"
+            android:fontFamily="@font/inter_semibold_600"
+            android:gravity="center"
+            app:cornerRadius="7dp"
+            android:textAllCaps="false"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/by_clicking_continue"
+            android:textColor="#5E6872"
+            android:layout_marginBottom="19dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="86dp"
+        android:text="@string/already_have_account"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="#5E6872"
+        android:lineSpacingExtra="6sp"
+        android:translationY="-2.94sp"/>
+
+
+</LinearLayout>

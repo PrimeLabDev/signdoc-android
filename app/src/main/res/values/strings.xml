@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SignDoc</string>
+
+    <string name="continue_text">Continue</string>
+    <string name="email_hint">Ex. Johndoe@gmail.com</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone number</string>
+    <string name="by_clicking_continue">by clicking continue you must agree to near labs\n Terms &amp; Conditions and Privacy Policy</string>
+    <string name="already_have_account">Already have NEAR account?\n Log in with NEAR</string>
+    <string name="create_account">Create an Account</string>
+    <string name="register_email_mobile">Register with your email or mobile</string>
+
+    <string name="login_into">Log into Account</string>
+    <string name="login_account">Login with your near account</string>
+    <string name="account_id">Account ID</string>
+    <string name="account_hint">johnd</string>
+    <string name="login_text">Login</string>
+
+    <string name="create_near">Create NEAR Account</string>
+    <string name="enter_id">Enter an Account ID to use with your NEAR account. Your Account ID will be used for all NEAR operations, including sending and receiving assets.\n</string>
+    <string name="full_name">Full Name</string>
+    <string name="full_name_hint">Ex. John doe</string>
+
+    <string name="sent_email">We\'ve sent a 6-digit verification code to the email address</string>
+    <string name="enter_verification">Enter verification code</string>
+    <string name="didnt_receive">Didn\'t receive your code\?</string>
+    <string name="resend_code">Resend your code </string>
+
+</resources>
