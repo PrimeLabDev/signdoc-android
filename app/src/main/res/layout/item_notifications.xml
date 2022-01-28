@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/notification_container">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_profile_img"
+            android:layout_marginTop="22dp"
+            android:layout_marginStart="19dp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textSize="15sp"
+                android:fontFamily="@font/inter_regular_400"
+                android:text="johndoe.near signed the Document Contract_Aggreement"
+                android:id="@+id/notification_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textSize="13sp"
+                android:fontFamily="@font/inter_regular_400"
+                android:textColor="#5E6872"
+                android:text="2 days ago"
+                android:id="@+id/notification_time"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Review"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/dark_blue"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="23dp"
+                android:id="@+id/notification_action"/>
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DFDFE0" />
+</LinearLayout>
