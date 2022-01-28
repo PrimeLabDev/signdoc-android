@@ -26,4 +26,11 @@
     <string name="didnt_receive">Didn\'t receive your code\?</string>
     <string name="resend_code">Resend your code </string>
 
+    <string name="upload">Upload</string>
+    <string name="sign">Sign</string>
+    <string name="send">Send</string>
+
+    <string name="upload_doc">Upload your document</string>
+    <string name="doc_info">Pdf, doc, docx, xls, xlsx, png, jpg, jpeg, tiff\n Max 50 MB</string>
+
 </resources>
