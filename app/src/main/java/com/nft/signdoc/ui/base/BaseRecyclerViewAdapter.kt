@@ -16,18 +16,4 @@ abstract class BaseRecyclerViewAdapter< VH : RecyclerView.ViewHolder>(
 
     abstract fun createViewHolderInternal(parent: ViewGroup, viewType: Int): VH
 
-//    fun getItemAtPosition(position: Int): DATA? = items.getOrNull(position)
-//
-//    fun removeItemAtPosition(position: Int): DATA? = items.removeAt(position)
-//
-//    @SuppressLint("NotifyDataSetChanged")
-//    open fun setData(newItems: List<DATA>?) {
-//        this.items.clear()
-//        this.items.addAll(newItems ?: emptyList())
-//        notifyDataSetChanged()
-//    }
-//    @SuppressWarnings("UNCHECKED_CAST")
-//    open fun getData() : List<DATA>? {
-//        return this.items
-//    }
 }

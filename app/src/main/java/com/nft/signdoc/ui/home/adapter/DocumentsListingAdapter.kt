@@ -10,13 +10,11 @@ import com.nft.signdoc.ui.base.BaseRecyclerViewAdapter
 
 class DocumentsListingAdapter () : BaseRecyclerViewAdapter<DocumentsListingAdapter.ItemDocumentViewHolder>() {
 
-    // binds the list items to a view
     override fun onBindViewHolder(holder: ItemDocumentViewHolder, position: Int) {
 
 
     }
 
-    // Holds the views for adding it to image and text
     class ItemDocumentViewHolder(
         private val binding: ItemDocumentBinding,
     ) : RecyclerView.ViewHolder(binding.root) {
