@@ -35,4 +35,7 @@
 
     <string name="sign_order">Set Signing Order</string>
     <string name="add_recipient">Add another recipient</string>
+
+    <string name="notifications">Notifications</string>
+
 </resources>
