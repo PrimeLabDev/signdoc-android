@@ -3,6 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/testprojects/docSign/app/src/main/res/drawable-v24/username_background.xml" value="0.2703125" />
+        <entry key="..\:/testprojects/docSign/app/src/main/res/drawable/divider.xml" value="0.2203125" />
+        <entry key="..\:/testprojects/docSign/app/src/main/res/drawable/document_status_tag_bg.xml" value="0.2703125" />
+        <entry key="..\:/testprojects/docSign/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/testprojects/docSign/app/src/main/res/drawable/username_background.xml" value="0.2703125" />
+        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/activity_home.xml" value="0.4" />
+        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/activity_login.xml" value="0.13677536231884058" />
+        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/activity_otp.xml" value="0.1793478260869565" />
+        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/activity_signup.xml" value="0.1793478260869565" />
+        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/all_documents_fragment.xml" value="0.1793478260869565" />
+        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/documents_listing_fragment.xml" value="0.1793478260869565" />
+        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/home_fragment.xml" value="0.264" />
+        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/item_document.xml" value="0.4" />
+        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/shared_with_me_documents_fragment.xml" value="0.1793478260869565" />
+        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/tool_bar_app.xml" value="0.264" />
+        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/tool_bar_auth.xml" value="0.1793478260869565" />
         <entry key="app/src/main/res/drawable/bg_edittext_fill_selected.xml" value="0.14114583333333333" />
         <entry key="app/src/main/res/drawable/bg_method_switch.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_signdoc.xml" value="0.2905" />

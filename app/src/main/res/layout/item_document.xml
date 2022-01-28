@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/fileIv"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/ic_file"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/docDetailLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fileIv"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        >
+        <TextView
+            android:id="@+id/docNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non disclouser"
+            android:textSize="17dp"
+            android:textColor="@color/app_theme_black_color"
+            />
+        <TextView
+            android:id="@+id/docSenderNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="marcus.near"
+            android:layout_below="@id/docNameTxt"
+            android:textSize="15dp"
+            android:textColor="@color/sender_name_blue_color"
+            android:includeFontPadding="false"/>
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/docStatusTagTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Draft"
+        android:textSize="15dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_toRightOf="@id/docDetailLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/document_status_tag_bg"
+        android:textColor="@color/status_tag_text_color"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Modified 12/10/22 12:30 PM"
+        android:textSize="14dp"
+        android:textColor="@color/gray_text_color"
+        android:layout_below="@id/docDetailLayout"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="4dp"
+        android:includeFontPadding="false"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ic_menu"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"/>
+</RelativeLayout>
