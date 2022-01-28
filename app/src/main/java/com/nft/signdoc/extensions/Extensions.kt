@@ -1,5 +1,6 @@
 package com.nft.signdoc.extensions
 
+import android.view.View
 import android.webkit.MimeTypeMap
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.*
@@ -206,4 +207,20 @@ fun File.getMimeType(fallback: String = "image/*"): String {
         ?.run { MimeTypeMap.getSingleton().getMimeTypeFromExtension(toLowerCase()) }
         ?: fallback // You might set it to */*
 }
+
+fun View.setDebouncedClickListener(
+    debounceIntervalMs: Int = 500,
+    listener: (view: View) -> Unit
+) {
+    var lastTapTimestamp: Long = 0
+    val customListener = View.OnClickListener {
+        val currentTime = System.currentTimeMillis()
+        if (currentTime - lastTapTimestamp > debounceIntervalMs) {
+            lastTapTimestamp = currentTime
+            listener(it)
+        }
+    }
+    this.setOnClickListener(customListener)
+}
+
 
