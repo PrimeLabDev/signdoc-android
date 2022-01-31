@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent">
 
     <TextView
@@ -9,12 +10,11 @@
         android:layout_height="wrap_content"
         android:text="Overview"
         android:textColor="#868E95"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"/>
 
     <GridLayout
-        android:layout_below="@id/overViewTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:rowCount="3"
@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:text="125"
                 android:textColor="#3367FF"
-                android:textSize="22dp"
+                android:textSize="22sp"
                 android:layout_marginTop="25dp"
                 android:layout_marginLeft="10dp" />
 
@@ -50,7 +50,7 @@
                 android:text="Total Documents"
                 android:textColor="#7F8A99"
                 android:layout_marginTop="5dp"
-                android:textSize="14dp"/>
+                android:textSize="14sp"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="0dp"
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:text="125"
                 android:textColor="#36A59E"
-                android:textSize="22dp"
+                android:textSize="22sp"
                 android:layout_marginTop="25dp"
                 android:layout_marginLeft="10dp" />
 
@@ -79,7 +79,7 @@
                 android:text="Needs Approval"
                 android:textColor="#7F8A99"
                 android:layout_marginTop="5dp"
-                android:textSize="14dp"/>
+                android:textSize="14sp"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="0dp"
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:text="126"
                 android:textColor="#C08356"
-                android:textSize="22dp"
+                android:textSize="22sp"
                 android:layout_marginTop="25dp"
                 android:layout_marginLeft="10dp" />
 
@@ -109,7 +109,7 @@
                 android:text="Need Signature"
                 android:textColor="#7F8A99"
                 android:layout_marginTop="5dp"
-                android:textSize="14dp"/>
+                android:textSize="14sp"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="0dp"
@@ -127,7 +127,7 @@
                 android:layout_height="wrap_content"
                 android:text="125"
                 android:textColor="#9B42FF"
-                android:textSize="22dp"
+                android:textSize="22sp"
                 android:layout_marginTop="25dp"
                 android:layout_marginLeft="10dp" />
 
@@ -139,7 +139,7 @@
                 android:text="Total Sent"
                 android:textColor="#7F8A99"
                 android:layout_marginTop="5dp"
-                android:textSize="14dp"/>
+                android:textSize="14sp"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="0dp"
@@ -156,7 +156,7 @@
                 android:layout_height="wrap_content"
                 android:text="125"
                 android:textColor="#1684A6"
-                android:textSize="22dp"
+                android:textSize="22sp"
                 android:layout_marginTop="25dp"
                 android:layout_marginLeft="10dp" />
 
@@ -168,7 +168,7 @@
                 android:text="Completed"
                 android:textColor="#7F8A99"
                 android:layout_marginTop="5dp"
-                android:textSize="14dp"/>
+                android:textSize="14sp"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -178,4 +178,4 @@
             android:layout_columnWeight="1"
             android:layout_column="1" />
     </GridLayout>
-</RelativeLayout>
+</LinearLayout>
