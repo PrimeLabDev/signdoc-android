@@ -10,6 +10,9 @@
     <color name="bold">#1D2C3C</color>
     <color name="dark_blue">#3367FF</color>
     <color name="hint_color">#828282</color>
+    <color name="gray">#828282</color>
+    <color name="btndisabled_color">#BDBDBD</color>
+    <color name="selectedColor">#EBEDF0</color>
     <color name="line_color">#E7E7E7</color>
     <color name="border">#DEDEDE</color>
     <color name="gray_text_color">#9DA3A9</color>
