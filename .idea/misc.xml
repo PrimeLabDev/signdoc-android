@@ -3,59 +3,38 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/testprojects/docSign/app/src/main/res/drawable-v24/username_background.xml" value="0.2703125" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/drawable/divider.xml" value="0.2203125" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/drawable/document_non_selected_ic.xml" value="0.2703125" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/drawable/document_selected_ic.xml" value="0.2703125" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/drawable/document_status_tag_bg.xml" value="0.2703125" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/drawable/ic_arrow_down.xml" value="0.2703125" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/drawable/ic_checked.xml" value="0.2703125" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/drawable/ic_wallet.xml" value="0.2703125" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/drawable/username_background.xml" value="0.2703125" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/activity_create_account.xml" value="0.13020833333333334" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/activity_doc_main.xml" value="0.13020833333333334" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/activity_home.xml" value="0.4" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/activity_login.xml" value="0.13677536231884058" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/activity_notifications.xml" value="0.1" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/activity_otp.xml" value="0.1793478260869565" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/activity_signup.xml" value="0.1793478260869565" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/activity_splash.xml" value="0.1" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/all_documents_fragment.xml" value="0.1793478260869565" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/documents_listing_fragment.xml" value="0.1793478260869565" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/fragment_send.xml" value="0.13020833333333334" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/fragment_sign.xml" value="0.1" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/fragment_upload.xml" value="0.1" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/home_fragment.xml" value="0.264" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/item_document.xml" value="0.4" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/item_notifications.xml" value="0.1" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/shared_with_me_documents_fragment.xml" value="0.1793478260869565" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/tool_bar_app.xml" value="0.264" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/tool_bar_auth.xml" value="0.1793478260869565" />
-        <entry key="..\:/testprojects/docSign/app/src/main/res/layout/tool_bar_main.xml" value="0.1793478260869565" />
+        <entry key="app/src/main/res/drawable-v24/ic_wallet.xml" value="0.1625" />
+        <entry key="app/src/main/res/drawable/bg_blue.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bg_dashed.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/bg_edittext_fill_selected.xml" value="0.14114583333333333" />
         <entry key="app/src/main/res/drawable/bg_method_switch.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_checked.xml" value="0.10277777777777777" />
+        <entry key="app/src/main/res/drawable/ic_not_checked.xml" value="0.10277777777777777" />
         <entry key="app/src/main/res/drawable/ic_signdoc.xml" value="0.2905" />
         <entry key="app/src/main/res/drawable/input_field_bg.xml" value="0.14114583333333333" />
-<<<<<<< HEAD
         <entry key="app/src/main/res/drawable/text_field_bg.xml" value="0.1625" />
         <entry key="app/src/main/res/layout/activity_create_account.xml" value="0.18765432098765433" />
         <entry key="app/src/main/res/layout/activity_doc_main.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.10260416666666666" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_notification.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_notifications.xml" value="0.14496461868130017" />
         <entry key="app/src/main/res/layout/activity_otp.xml" value="0.14635416666666667" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.11" />
-=======
->>>>>>> fb0b45748d11c70a4a7adf87bd6b3f9cfae3baf6
         <entry key="app/src/main/res/layout/content_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/custom_progress_dialog_layout.xml" value="0.121875" />
         <entry key="app/src/main/res/layout/fragment_create_account.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.14635416666666667" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_otp.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_send.xml" value="0.22193211488250653" />
+        <entry key="app/src/main/res/layout/fragment_sign.xml" value="0.14635416666666667" />
         <entry key="app/src/main/res/layout/fragment_signup.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_upload.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_notifications.xml" value="0.28716216216216217" />
         <entry key="app/src/main/res/layout/tool_bar.xml" value="0.32447916666666665" />
+        <entry key="app/src/main/res/layout/tool_bar_auth.xml" value="0.14635416666666667" />
+        <entry key="app/src/main/res/layout/tool_bar_main.xml" value="0.18559556786703602" />
       </map>
     </option>
   </component>

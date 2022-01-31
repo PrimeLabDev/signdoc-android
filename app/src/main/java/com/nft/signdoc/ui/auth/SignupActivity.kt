@@ -26,6 +26,7 @@ import androidx.core.widget.doAfterTextChanged
 import com.nft.signdoc.R
 import com.nft.signdoc.extensions.*
 import com.nft.signdoc.util.AppConstants
+import com.nft.signdoc.util.Helpers
 import dagger.hilt.android.AndroidEntryPoint
 import java.util.regex.Pattern
 
@@ -59,15 +60,7 @@ class SignupActivity : BaseActivity() {
     }
 
     private fun initViews(){
-        binding.termsText.makeLinks(Pair("Terms & Conditions", View.OnClickListener {
-            val browserIntent = Intent(Intent.ACTION_VIEW)
-            browserIntent.data = Uri.parse("https://terms.nftmakerapp.io/")
-            this.startActivity(browserIntent)
-        }), Pair("Privacy Policy", View.OnClickListener {
-            val browserIntent = Intent(Intent.ACTION_VIEW)
-            browserIntent.data = Uri.parse("https://privacy.nftmakerapp.io/")
-            this.startActivity(browserIntent)
-        }))
+        Helpers.setTermsConditions(binding.termsText, this)
 
         binding.loginButtonView.apply {
 
