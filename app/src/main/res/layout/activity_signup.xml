@@ -37,7 +37,7 @@
             android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/full_name"
+            android:id="@+id/fullNameText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="14dp"
@@ -60,11 +60,12 @@
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:paddingHorizontal="14dp"
-            android:textColor="#828282"
-            android:textColorHint="@color/hint_color" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_color"
+            />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/account_id"
+            android:id="@+id/account_id_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="14dp"
@@ -81,7 +82,7 @@
             android:layout_marginTop="10dp">
 
             <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/EmailPhone"
+                android:id="@+id/accountId"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
@@ -93,7 +94,7 @@
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:paddingHorizontal="14dp"
-                android:textColor="#828282"
+                android:textColor="@color/black"
                 android:textColorHint="@color/hint_color" />
 
             <View
@@ -122,14 +123,15 @@
             android:layout_height="50dp"
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="15dp"
-            android:backgroundTint="@color/dark_blue"
+            android:backgroundTint="@color/btndisabled_color"
             android:fontFamily="@font/inter_semibold_600"
             android:gravity="center"
             android:text="@string/continue_text"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="14sp"
-            app:cornerRadius="7dp" />
+            app:cornerRadius="7dp"
+            android:id="@+id/btnCreateAccount"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -139,7 +141,10 @@
             android:layout_marginBottom="19dp"
             android:gravity="center_horizontal"
             android:text="@string/by_clicking_continue"
-            android:textColor="#5E6872" />
+            android:textColor="#5E6872"
+            android:id="@+id/termsText"
+            android:autoLink="web"
+            android:textColorLink="@color/dark_blue"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

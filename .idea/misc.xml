@@ -13,12 +13,15 @@
         <entry key="app/src/main/res/drawable/ic_signdoc.xml" value="0.2905" />
         <entry key="app/src/main/res/drawable/input_field_bg.xml" value="0.14114583333333333" />
         <entry key="app/src/main/res/drawable/text_field_bg.xml" value="0.1625" />
+        <entry key="app/src/main/res/layout/activity_create_account.xml" value="0.18765432098765433" />
         <entry key="app/src/main/res/layout/activity_doc_main.xml" value="0.125" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_notification.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_notifications.xml" value="0.14496461868130017" />
         <entry key="app/src/main/res/layout/activity_otp.xml" value="0.14635416666666667" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.11" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/custom_progress_dialog_layout.xml" value="0.121875" />
         <entry key="app/src/main/res/layout/fragment_create_account.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.14635416666666667" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />

@@ -32,18 +32,22 @@
         android:layout_height="?actionBarSize"
         android:layout_marginTop="37dp">
 
-        <TextView
-            android:id="@+id/email_text"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/emailBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toStartOf="@id/sep"
-            android:background="@drawable/bg_method_switch"
+            android:backgroundTint="@color/selectedColor"
+            android:elevation="0dp"
             android:focusedByDefault="true"
             android:fontFamily="@font/inter_medium_500"
             android:text="@string/email"
+            android:textAllCaps="false"
             android:textColor="#475766"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            app:cornerRadius="7dp"
+            app:elevation="0dp" />
 
         <View
             android:id="@+id/sep"
@@ -51,17 +55,19 @@
             android:layout_height="1dp"
             android:layout_centerInParent="true" />
 
-        <TextView
-            android:id="@+id/phoneText"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/phoneBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toEndOf="@id/sep"
-            android:background="@drawable/bg_method_switch"
+            android:backgroundTint="@color/white"
             android:fontFamily="@font/inter_medium_500"
             android:text="@string/phone"
+            android:textAllCaps="false"
             android:textColor="#475766"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            app:cornerRadius="7dp" />
     </RelativeLayout>
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -90,13 +96,14 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/input_field_bg"
             android:fontFamily="@font/inter_regular_400"
-            android:hint="@string/email_hint"
+            android:hint="@string/email_example"
             android:imeOptions="actionDone"
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:paddingHorizontal="14dp"
-            android:textColor="#828282"
-            android:textColorHint="@color/hint_color" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_color"
+            />
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
@@ -104,14 +111,16 @@
             android:layout_marginHorizontal="15dp"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="16dp"
-            android:backgroundTint="@color/dark_blue"
+            android:backgroundTint="@color/btndisabled_color"
             android:fontFamily="@font/inter_semibold_600"
             android:gravity="center"
             android:text="@string/continue_text"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="14sp"
-            app:cornerRadius="7dp" />
+            app:cornerRadius="7dp"
+            android:id="@+id/btnCreateAccount"
+            />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -123,7 +132,9 @@
         android:layout_marginTop="26dp"
         android:gravity="center_horizontal"
         android:text="@string/by_clicking_continue"
-        android:textColor="#5E6872" />
+        android:textColor="#5E6872"
+        android:autoLink="web"
+        android:textColorLink="@color/dark_blue"/>
 
     <View
         android:layout_width="match_parent"
@@ -133,7 +144,6 @@
         android:background="#DFDFE0" />
 
     <TextView
-        android:id="@+id/login_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -141,7 +151,9 @@
         android:layout_marginTop="24dp"
         android:gravity="center"
         android:text="@string/already_have_account"
-        android:textColor="#5E6872" />
+        android:textColor="#5E6872"
+        android:id="@+id/loginButtonView"
+        />
 
 
 </LinearLayout>
