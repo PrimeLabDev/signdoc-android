@@ -8,6 +8,7 @@ import com.nft.signdoc.R
 import com.nft.signdoc.extensions.startNewActivityWithDefaultAnimation
 import com.nft.signdoc.ui.auth.CreateAccActivity
 import com.nft.signdoc.ui.auth.SignupActivity
+import com.nft.signdoc.ui.home.HomeActivity
 import com.nft.signdoc.ui.sign.DocSignActivity
 import com.nft.signdoc.viewmodel.UserViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -21,10 +22,12 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
+
         if(!userViewModel.loggedIn){
             startNewActivityWithDefaultAnimation(CreateAccActivity.getIntent(this))
         }else{
-            //go to home
+            startNewActivityWithDefaultAnimation(HomeActivity.getIntent(this))
         }
+
     }
 }

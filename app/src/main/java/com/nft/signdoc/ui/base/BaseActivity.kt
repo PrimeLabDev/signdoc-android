@@ -4,6 +4,8 @@ import android.app.AlertDialog
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.nft.signdoc.util.AlertDialogUtil
+import androidx.fragment.app.Fragment
+import com.nft.signdoc.R
 
 open class BaseActivity : AppCompatActivity() {
 
@@ -20,5 +22,11 @@ open class BaseActivity : AppCompatActivity() {
     fun dismissProgressDialog(){
         progressDialog?.dismiss()
         progressDialog = null
+    }
+
+    fun showFragment(fragment: Fragment){
+        val fragmentManager = supportFragmentManager.beginTransaction()
+        fragmentManager.replace(R.id.fragment_main,fragment)
+        fragmentManager.commit()
     }
 }
