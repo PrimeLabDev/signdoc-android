@@ -11,10 +11,14 @@
         android:theme="@style/Theme.SignDoc.NoActionBar"
         android:name=".SignDocApplication">
         <activity
+            android:name=".ui.home.HomeActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.splash.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
