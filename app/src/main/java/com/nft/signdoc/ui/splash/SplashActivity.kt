@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.nft.signdoc.R
 import com.nft.signdoc.extensions.startNewActivityWithDefaultAnimation
 import com.nft.signdoc.ui.auth.SignupActivity
+import com.nft.signdoc.ui.home.HomeActivity
 import com.nft.signdoc.ui.sign.DocSignActivity
 
 @SuppressLint("CustomSplashScreen")
@@ -13,6 +14,6 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-        startNewActivityWithDefaultAnimation(SignupActivity.getIntent(this))
+        startNewActivityWithDefaultAnimation(HomeActivity.getIntent(this))
     }
 }
