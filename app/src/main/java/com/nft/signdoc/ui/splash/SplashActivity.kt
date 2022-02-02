@@ -24,7 +24,7 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         if(!userViewModel.loggedIn){
-            startNewActivityWithDefaultAnimation(DocSignActivity.getIntent(this))
+            startNewActivityWithDefaultAnimation(CreateAccActivity.getIntent(this))
         }else{
             startNewActivityWithDefaultAnimation(HomeActivity.getIntent(this))
         }
