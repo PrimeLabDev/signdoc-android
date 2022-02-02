@@ -7,101 +7,56 @@
 
     <include layout="@layout/tool_bar_main"/>
 
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginHorizontal="11dp"
-        android:background="@drawable/input_field_bg"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp">
 
-        <View
-            android:layout_width="92dp"
-            android:layout_height="1dp"
-            android:background="@color/bg_gray"
-            android:layout_marginTop="24dp"/>
-
-        <LinearLayout
+        <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginStart="46dp">
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_left"
+            android:layout_marginStart="10dp"/>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_checked"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center_horizontal"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/upload"
-                android:fontFamily="@font/inter_medium_500"
-                android:textColor="#1D2C3B"
-                android:layout_marginTop="5dp"
-                android:layout_gravity="center_horizontal"/>
-
-        </LinearLayout>
-
-
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginStart="46dp">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_checked"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center_horizontal"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/sign"
-                android:fontFamily="@font/inter_medium_500"
-                android:textColor="#1D2C3B"
-                android:layout_marginTop="5dp"
-                android:layout_gravity="center_horizontal"/>
-
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_semibold_600"
+            android:text="@string/upload_file"
+            android:id="@+id/sectionName"
+            android:layout_centerInParent="true"/>
 
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginStart="46dp">
+    </RelativeLayout>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_checked"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center_horizontal"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/send"
-                android:fontFamily="@font/inter_medium_500"
-                android:textColor="#1D2C3B"
-                android:layout_marginTop="5dp"
-                android:layout_gravity="center_horizontal"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DFDFE0"
+        android:layout_marginTop="18dp"/>
 
-        </LinearLayout>
-
-    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginTop="16dp"
         android:layout_marginHorizontal="11dp"
-        android:background="@drawable/input_field_bg"
         >
 
+
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="90dp"
+            android:id="@+id/sep1"
+            app:trackColor="#DFDFE0"
+            app:indicatorColor="@color/dark_blue"
+            />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -109,46 +64,52 @@
             android:src="@drawable/ic_checked"
             android:layout_marginTop="10dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginStart="46dp"
+            android:layout_marginStart="65dp"
             android:id="@+id/upload_layout"
             android:layout_alignParentStart="true"/>
 
 
-        <View
-            android:layout_width="92dp"
-            android:layout_height="1dp"
-            android:background="@color/bg_gray"
-            android:layout_marginTop="24dp"
-            android:layout_toEndOf="@id/upload_layout"
-            android:id="@+id/sep1"/>
-
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_checked"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center_horizontal"
             android:id="@+id/sign_layout"
-            android:layout_toEndOf="@id/sep1"/>
-
-        <View
-            android:layout_width="92dp"
-            android:layout_height="1dp"
-            android:background="@color/bg_gray"
-            android:layout_marginTop="24dp"
-            android:layout_toEndOf="@id/sign_layout"
-            android:id="@+id/sep2"/>
-
-
-        <ImageView
-            android:id="@+id/send_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:layout_toEndOf="@id/sep2"
-            android:src="@drawable/ic_checked" />
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_checked"
+            android:layout_marginEnd="65dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upload"
+            android:layout_below="@id/upload_layout"
+            android:gravity="center"
+            android:layout_marginStart="60dp"
+            android:fontFamily="@font/inter_medium_500"
+            android:textSize="12sp"
+            android:textColor="#5E6872"
+            android:layout_marginTop="5dp"
+            android:id="@+id/upload_text"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign"
+            android:layout_below="@id/sign_layout"
+            android:gravity="center"
+            android:layout_marginStart="60dp"
+            android:fontFamily="@font/inter_medium_500"
+            android:textSize="12sp"
+            android:textColor="#5E6872"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_checked"
+            android:layout_marginEnd="65dp"
+            android:id="@+id/sign_text"
+            />
 
     </RelativeLayout>
 

@@ -49,6 +49,18 @@
 
     <string name="upload_doc">Upload your document</string>
     <string name="doc_info">Pdf, doc, docx, xls, xlsx, png, jpg, jpeg, tiff\n Max 50 MB</string>
+    <string name="title">Title</string>
+    <string name="title_hint">contract12.01.2022.pdf</string>
+    <string name="description">Description</string>
+    <string name="desc_hint">Ex. Redeemable Art</string>
+    <string name="choose_file">Choose File</string>
+    <string name="sign_doc">Sign Document</string>
+    <string name="upload_file">Upload File</string>
+
+    <string name="sent_doc_text">The minted document with token\'s id and hash information were sent to your e-mail</string>
+    <string name="go_home">Go to homepage</string>
+    <string name="token_id">Token Id</string>
+    <string name="doc_hash">Your Document\'s Hash:</string>
 
     <string name="sign_order">Set Signing Order</string>
     <string name="add_recipient">Add another recipient</string>
