@@ -63,7 +63,7 @@
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:paddingHorizontal="14dp"
-                android:textColor="#828282"
+                android:textColor="@color/black"
                 android:textColorHint="@color/hint_color" />
 
             <View
@@ -100,37 +100,24 @@
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="14sp"
-            app:cornerRadius="7dp" />
+            app:cornerRadius="7dp"
+            android:id="@+id/btnLogin"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="95dp"
-        android:gravity="center_horizontal"
-        android:text="@string/by_clicking_continue"
-        android:textColor="#5E6872" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginHorizontal="36dp"
-        android:layout_marginTop="17dp"
-        android:background="#DFDFE0" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginHorizontal="86dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="60dp"
         android:gravity="center"
         android:lineSpacingExtra="6sp"
-        android:text="@string/already_have_account"
+        android:text="@string/dont_have_account"
         android:textColor="#5E6872"
-        android:translationY="-2.94sp" />
+        android:translationY="-2.94sp"
+        android:id="@+id/createAccountView"/>
 
 
 </LinearLayout>

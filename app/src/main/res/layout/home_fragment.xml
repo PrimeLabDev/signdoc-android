@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/overViewTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overview"
+        android:textColor="#868E95"
+        android:textSize="17sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:columnCount="2">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="95dp"
+            android:layout_row="0"
+            android:layout_columnWeight="1"
+            android:layout_column="0"
+            android:background="@drawable/total_sent_count_bg"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp">
+
+            <TextView
+                android:id="@+id/totalDocumentCountTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="125"
+                android:textColor="#3367FF"
+                android:textSize="22sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/totalDocumentCountTxt"
+                android:layout_alignStart="@id/totalDocumentCountTxt"
+                android:text="Total Documents"
+                android:textColor="#7F8A99"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="95dp"
+            android:layout_row="0"
+            android:layout_columnWeight="1"
+            android:layout_column="1"
+            android:background="@drawable/need_approval_count_bg"
+            android:layout_marginLeft="7dp"
+            android:layout_marginBottom="7dp">
+            <TextView
+                android:id="@+id/needsApprovalCountTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="125"
+                android:textColor="#36A59E"
+                android:textSize="22sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/needsApprovalCountTxt"
+                android:layout_alignStart="@id/needsApprovalCountTxt"
+                android:text="Needs Approval"
+                android:textColor="#7F8A99"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="95dp"
+            android:layout_row="1"
+            android:layout_columnWeight="1"
+            android:layout_column="0"
+            android:background="@drawable/need_signature_count_bg"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="7dp">
+            <TextView
+                android:id="@+id/needSignatureCountTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="126"
+                android:textColor="#C08356"
+                android:textSize="22sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/needSignatureCountTxt"
+                android:layout_alignStart="@id/needSignatureCountTxt"
+                android:text="Need Signature"
+                android:textColor="#7F8A99"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="95dp"
+            android:layout_row="1"
+            android:layout_columnWeight="1"
+            android:layout_column="1"
+            android:background="@drawable/total_sent_count_bg"
+            android:layout_marginLeft="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp">
+            <TextView
+                android:id="@+id/totalSentCountTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="125"
+                android:textColor="#9B42FF"
+                android:textSize="22sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/totalSentCountTxt"
+                android:layout_alignStart="@id/totalSentCountTxt"
+                android:text="Total Sent"
+                android:textColor="#7F8A99"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="95dp"
+            android:layout_row="2"
+            android:layout_columnWeight="1"
+            android:layout_column="0"
+            android:background="@drawable/completed_count_bg"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="7dp">
+            <TextView
+                android:id="@+id/completedCountTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="125"
+                android:textColor="#1684A6"
+                android:textSize="22sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/completedCountTxt"
+                android:layout_alignStart="@id/completedCountTxt"
+                android:text="Completed"
+                android:textColor="#7F8A99"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_row="2"
+            android:layout_columnWeight="1"
+            android:layout_column="1" />
+    </GridLayout>
+</LinearLayout>

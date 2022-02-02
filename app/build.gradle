@@ -121,6 +121,8 @@ dependencies {
     //work manager
     implementation rootProject.deps.work_manager
 
+    annotationProcessor "com.google.dagger:dagger-android-processor:2.11"
+
 }
 
 kapt {

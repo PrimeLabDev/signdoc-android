@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar_main"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold_600"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:text="@string/notifications"
+            android:layout_marginStart="21dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_vertical"
+            android:paddingHorizontal="11.5dp"
+            android:layout_marginVertical="17dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/inter_medium_500"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_blue"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_close"
+            android:scaleType="fitEnd"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="23dp"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#DFDFE0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notificationsList"
+        tools:listitem="@layout/item_notifications"/>
+
+</LinearLayout>
