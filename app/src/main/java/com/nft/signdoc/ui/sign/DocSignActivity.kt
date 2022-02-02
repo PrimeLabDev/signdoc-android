@@ -6,13 +6,9 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
-import com.nft.signdoc.R
 import com.nft.signdoc.databinding.ActivityDocMainBinding
-import com.nft.signdoc.databinding.ActivityOtpBinding
 import com.nft.signdoc.extensions.viewBinding
-import com.nft.signdoc.ui.auth.SignupActivity
 import com.nft.signdoc.ui.base.BaseActivity
-import com.nft.signdoc.ui.sign.fragments.SendFragment
 import com.nft.signdoc.ui.sign.fragments.SignFragment
 import com.nft.signdoc.ui.sign.fragments.UploadFragment
 import dagger.hilt.android.AndroidEntryPoint
@@ -41,13 +37,12 @@ class DocSignActivity : BaseActivity() {
     }
 
     private inner class ScreenSlidePagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
-        override fun getCount(): Int = 3
+        override fun getCount(): Int = 2
 
         override fun getItem(position: Int): Fragment =
             when (position) {
                 0 -> UploadFragment()
                 1 -> SignFragment()
-                2 -> SendFragment()
                 else -> Fragment()
             }
     }

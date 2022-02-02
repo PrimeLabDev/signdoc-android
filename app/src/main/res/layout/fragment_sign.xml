@@ -1,59 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
 
     <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="@drawable/input_field_bg"
-        android:layout_marginHorizontal="11dp"
+        android:backgroundTint="#E3E3E4"
+        android:layout_marginHorizontal="29dp"
         android:layout_marginTop="27dp">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_upload"
+            android:src="@drawable/ic_doc_sent"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="32dp"
             android:id="@+id/doc_img"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/upload_doc"
-            android:textSize="22sp"
-            android:textColor="#1D2C3B"
+            android:text="@string/sent_doc_text"
+            android:textSize="14sp"
+            android:textColor="@color/black"
             android:fontFamily="@font/inter_semibold_600"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_gravity="center_horizontal"
-            android:id="@+id/upload_text"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:layout_marginBottom="16dp"
-            android:text="@string/doc_info"
-            android:textSize="12sp"
-            android:textColor="#5E6872"
-            android:fontFamily="@font/inter_medium_500"
-            android:layout_gravity="center_horizontal"
+            android:id="@+id/upload_text"
             android:gravity="center"
-            android:id="@+id/doc_info"/>
-
-        <com.google.android.material.progressindicator.LinearProgressIndicator
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginHorizontal="11dp"
-            app:trackColor="#DFDFE0"
-            app:indicatorColor="@color/black"
-            android:layout_marginBottom="24dp"
-            android:id="@+id/upload_progress"
-            android:visibility="invisible"/>
-
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginBottom="24dp"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DFDFE0"
+        android:layout_marginTop="22dp"
+        android:layout_marginHorizontal="29dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:text="@string/token_id"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/inter_regular_400"
+        android:textSize="14sp"
+        android:textColor="#2C3E50"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:text="Ex. 12345BF4"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter_regular_400"
+        android:textSize="14sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:text="@string/doc_hash"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_regular_400"
+        android:textSize="14sp"
+        android:textColor="#2C3E50"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:text="0x7B502C3A1F48C8609AE212CDFB639D"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter_regular_400"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DFDFE0"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="29dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginTop="30dp"
+        app:backgroundTint="@color/dark_blue"
+        android:text="@string/go_home"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:fontFamily="@font/inter_semibold_600"
+        android:paddingVertical="9dp"
+        android:id="@+id/btnHomePage"
+        app:elevation="0dp"
+        android:elevation="0dp"
+        />
+
+
+</LinearLayout>
