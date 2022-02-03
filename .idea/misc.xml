@@ -25,7 +25,7 @@
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_notification.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_notifications.xml" value="0.14496461868130017" />
-        <entry key="app/src/main/res/layout/activity_otp.xml" value="0.14635416666666667" />
+        <entry key="app/src/main/res/layout/activity_otp.xml" value="0.2662782210001173" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.11" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/custom_progress_dialog_layout.xml" value="0.121875" />
@@ -36,6 +36,8 @@
         <entry key="app/src/main/res/layout/fragment_send.xml" value="0.22193211488250653" />
         <entry key="app/src/main/res/layout/fragment_sign.xml" value="0.14635416666666667" />
         <entry key="app/src/main/res/layout/fragment_signup.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_upload.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/home_fragment.xml" value="0.13854166666666667" />
         <entry key="app/src/main/res/layout/fragment_upload.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_notifications.xml" value="0.28716216216216217" />
         <entry key="app/src/main/res/layout/tool_bar.xml" value="0.32447916666666665" />

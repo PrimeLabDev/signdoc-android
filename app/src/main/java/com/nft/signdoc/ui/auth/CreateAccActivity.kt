@@ -1,5 +1,6 @@
 package com.nft.signdoc.ui.auth
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.content.res.ColorStateList
@@ -11,6 +12,7 @@ import android.text.InputType
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.activity.viewModels
@@ -27,6 +29,7 @@ import com.nft.signdoc.ui.base.BaseFragment
 import com.nft.signdoc.util.Helpers
 import com.nft.signdoc.viewmodel.UserViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import timber.log.Timber
 
 @AndroidEntryPoint
 class CreateAccActivity : BaseActivity() {
@@ -52,6 +55,8 @@ class CreateAccActivity : BaseActivity() {
 
     private fun initViews(){
 
+        userViewModel.prefs.clear()
+
         Helpers.setTermsConditions(binding.termsText, this)
 
 
@@ -73,6 +78,7 @@ class CreateAccActivity : BaseActivity() {
     }
 
     private fun listenToViewEvents() {
+        Log.e("prefs ", "result : "+ userViewModel.currentEmail)
 
         binding.emailBtn.setOnClickListener {
             binding.EmailPhone.text?.clear()
@@ -108,13 +114,20 @@ class CreateAccActivity : BaseActivity() {
         }
     }
 
+    @SuppressLint("TimberArgCount")
     private fun getStarted() {
         val usesEmail = !userViewModel.usesPhone
         if (Helpers.checkEmailPhone(binding.EmailPhone.text.toString(), usesEmail)) {
             if (userViewModel.usesPhone) {
                 userViewModel.currentPhone = binding.EmailPhone.text.toString()
+                userViewModel.prefs.currentPhone = binding.EmailPhone.text.toString()
             } else {
                 userViewModel.currentEmail = binding.EmailPhone.text.toString()
+                userViewModel.prefs.currentEmail = binding.EmailPhone.text.toString()
+            }
+
+            userViewModel.apply {
+
             }
 
             startActivity(SignupActivity.getIntent(this))
