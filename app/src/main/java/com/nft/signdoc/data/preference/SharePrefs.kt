@@ -1,6 +1,7 @@
 package com.nft.signdoc.data.preference
 
 import android.content.SharedPreferences
+import com.nft.signdoc.extensions.boolean
 import com.nft.signdoc.extensions.string
 
 class SharePrefs(private val sharePrefs: SharedPreferences) {
@@ -13,6 +14,9 @@ class SharePrefs(private val sharePrefs: SharedPreferences) {
     var loginType by sharePrefs.string()
     var walletName by sharePrefs.string()
     var userInfo by sharePrefs.string()
+    var usesPhone by sharePrefs.boolean()
+    var currentEmail by sharePrefs.string()
+    var currentPhone by sharePrefs.string()
 
     fun registerKeyChangeListener(listener: SharedPreferences.OnSharedPreferenceChangeListener) {
         sharePrefs.registerOnSharedPreferenceChangeListener(listener)

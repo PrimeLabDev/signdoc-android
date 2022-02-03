@@ -17,6 +17,7 @@ import com.nft.signdoc.databinding.ActivityOtpBinding
 import com.nft.signdoc.extensions.observeResultFlow
 import com.nft.signdoc.extensions.viewBinding
 import com.nft.signdoc.ui.base.BaseActivity
+import com.nft.signdoc.ui.home.HomeActivity
 import com.nft.signdoc.viewmodel.UserViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -67,7 +68,7 @@ class OtpActivity : BaseActivity() {
                     userViewModel.walletName,
                     nonce
                 ), successHandler = {
-                    //intent go to Home verification was successful
+                    startActivity(HomeActivity.getIntent(this))
                 }, errorHandler = {
                     Toast.makeText(this, it?.message.toString(), Toast.LENGTH_SHORT)
                         .show()
