@@ -11,6 +11,7 @@
         android:text="Overview"
         android:textColor="#868E95"
         android:textSize="17sp"
+        android:fontFamily="@font/inter_regular_400"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"/>
 
@@ -36,21 +37,24 @@
                 android:id="@+id/totalDocumentCountTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="125"
-                android:textColor="#3367FF"
-                android:textSize="22sp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="25dp"
-                android:layout_marginLeft="10dp" />
+                android:text="125"
+                android:fontFamily="@font/inter_regular_400"
+
+                android:textColor="#3367FF"
+                android:textSize="22sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular_400"
                 android:layout_below="@id/totalDocumentCountTxt"
                 android:layout_alignStart="@id/totalDocumentCountTxt"
+                android:layout_marginTop="5dp"
                 android:text="Total Documents"
                 android:textColor="#7F8A99"
-                android:layout_marginTop="5dp"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="0dp"
@@ -61,25 +65,28 @@
             android:background="@drawable/need_approval_count_bg"
             android:layout_marginLeft="7dp"
             android:layout_marginBottom="7dp">
+
             <TextView
                 android:id="@+id/needsApprovalCountTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular_400"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
                 android:text="125"
                 android:textColor="#36A59E"
-                android:textSize="22sp"
-                android:layout_marginTop="25dp"
-                android:layout_marginLeft="10dp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular_400"
                 android:layout_below="@id/needsApprovalCountTxt"
                 android:layout_alignStart="@id/needsApprovalCountTxt"
+                android:layout_marginTop="5dp"
                 android:text="Needs Approval"
                 android:textColor="#7F8A99"
-                android:layout_marginTop="5dp"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="0dp"
@@ -91,25 +98,28 @@
             android:layout_marginTop="7dp"
             android:layout_marginBottom="7dp"
             android:layout_marginRight="7dp">
+
             <TextView
                 android:id="@+id/needSignatureCountTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/inter_regular_400"
+                android:layout_marginTop="25dp"
                 android:text="126"
                 android:textColor="#C08356"
-                android:textSize="22sp"
-                android:layout_marginTop="25dp"
-                android:layout_marginLeft="10dp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular_400"
                 android:layout_below="@id/needSignatureCountTxt"
                 android:layout_alignStart="@id/needSignatureCountTxt"
+                android:layout_marginTop="5dp"
                 android:text="Need Signature"
                 android:textColor="#7F8A99"
-                android:layout_marginTop="5dp"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="0dp"
@@ -121,25 +131,28 @@
             android:layout_marginLeft="7dp"
             android:layout_marginBottom="7dp"
             android:layout_marginTop="7dp">
+
             <TextView
                 android:id="@+id/totalSentCountTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/inter_regular_400"
+                android:layout_marginTop="25dp"
                 android:text="125"
                 android:textColor="#9B42FF"
-                android:textSize="22sp"
-                android:layout_marginTop="25dp"
-                android:layout_marginLeft="10dp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular_400"
                 android:layout_below="@id/totalSentCountTxt"
                 android:layout_alignStart="@id/totalSentCountTxt"
+                android:layout_marginTop="5dp"
                 android:text="Total Sent"
                 android:textColor="#7F8A99"
-                android:layout_marginTop="5dp"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="0dp"
@@ -150,25 +163,28 @@
             android:background="@drawable/completed_count_bg"
             android:layout_marginTop="7dp"
             android:layout_marginRight="7dp">
+
             <TextView
                 android:id="@+id/completedCountTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular_400"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
                 android:text="125"
                 android:textColor="#1684A6"
-                android:textSize="22sp"
-                android:layout_marginTop="25dp"
-                android:layout_marginLeft="10dp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular_400"
                 android:layout_below="@id/completedCountTxt"
                 android:layout_alignStart="@id/completedCountTxt"
+                android:layout_marginTop="5dp"
                 android:text="Completed"
                 android:textColor="#7F8A99"
-                android:layout_marginTop="5dp"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
         </RelativeLayout>
 
         <RelativeLayout

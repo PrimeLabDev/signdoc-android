@@ -19,13 +19,15 @@
         android:layout_marginTop="25dp"
         android:layout_marginLeft="5dp"
         >
+
         <TextView
             android:id="@+id/docNameTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Non disclouser"
-            android:textSize="17sp"
             android:textColor="@color/app_theme_black_color"
+            android:textSize="17sp"
+            android:fontFamily="@font/inter_medium_500"
             />
 
         <TextView
@@ -34,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/docNameTxt"
             android:includeFontPadding="false"
-            android:text="marcus.near"
+            android:fontFamily="@font/inter_regular_400"
             android:textColor="@color/sender_name_blue_color"
             android:textSize="15sp" />
 
@@ -47,6 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="23dp"
+        android:fontFamily="@font/inter_medium_500"
         android:layout_toRightOf="@id/docDetailLayout"
         android:background="@drawable/document_status_tag_bg"
         android:paddingLeft="10dp"
@@ -64,6 +67,7 @@
         android:layout_below="@id/docDetailLayout"
         android:layout_marginLeft="70dp"
         android:layout_marginTop="4dp"
+        android:fontFamily="@font/inter_regular_400"
         android:includeFontPadding="false"
         android:text="@string/last_modified_at"
         android:textColor="@color/gray_text_color"
@@ -76,6 +80,7 @@
         android:layout_below="@id/docDetailLayout"
         android:layout_toRightOf="@id/updatedDateTag"
         android:layout_marginLeft="5dp"
+        android:fontFamily="@font/inter_regular_400"
         android:layout_marginTop="4dp"
         android:includeFontPadding="false"
         android:text="12/10/22 12:30 PM"
