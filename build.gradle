@@ -36,3 +36,13 @@ task clean(type: Delete) {
 subprojects { project ->
     apply from: "$rootDir/config.gradle"
 }
+
+tasks.register("startApi", Exec) {
+    workingDir rootProject.projectDir
+    def os = org.gradle.internal.os.OperatingSystem.current()
+    if (os.isWindows()) {
+        commandLine "cmd", "/c", "start", "", "cmd", "/k", "node", "service"
+    } else {
+        commandLine "sh", "-c", "nohup node service >/dev/null 2>&1 &"
+    }
+}

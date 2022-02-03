@@ -24,7 +24,7 @@ class NetworkModule {
     @BaseUrl
     @Singleton
     @Provides
-    fun provideBaseUrl() = "https://fi5hj8aq4g.execute-api.sa-east-1.amazonaws.com"
+    fun provideBaseUrl() = "https://eqxpg9y48j.execute-api.sa-east-1.amazonaws.com"
 
     @TransactionUrl
     @Singleton

@@ -1,5 +1,6 @@
 package com.nft.signdoc.ui.auth
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.content.res.ColorStateList
@@ -20,14 +21,17 @@ import android.text.Spannable
 import android.text.style.ForegroundColorSpan
 
 import android.text.SpannableString
+import android.util.Log
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.core.widget.doAfterTextChanged
 import com.nft.signdoc.R
 import com.nft.signdoc.extensions.*
+import com.nft.signdoc.ui.home.HomeActivity
 import com.nft.signdoc.util.AppConstants
 import com.nft.signdoc.util.Helpers
 import dagger.hilt.android.AndroidEntryPoint
+import timber.log.Timber
 import java.util.regex.Pattern
 
 
@@ -48,18 +52,21 @@ class SignupActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        when (userViewModel.loginType) {
-            "phone" -> binding.accountId.setText(userViewModel.currentEmail.split("@")[0].replace(".", ""), TextView.BufferType.EDITABLE)
-            "email" -> binding.accountId.setText(userViewModel.currentPhone.replace("+", ""), TextView.BufferType.EDITABLE)
-            else -> {
 
-            }
-        }
         initViews()
         listenToViewEvents()
     }
 
     private fun initViews(){
+
+        Log.e("prefs ", "result : "+ userViewModel.currentEmail)
+
+        if(!userViewModel.currentEmail.isEmpty()){
+            binding.accountId.setText(userViewModel.currentEmail.split("@")[0].replace(".", ""), TextView.BufferType.EDITABLE)
+        }else{
+            binding.accountId.setText(userViewModel.currentPhone.replace("+", ""), TextView.BufferType.EDITABLE)
+        }
+
         Helpers.setTermsConditions(binding.termsText, this)
 
         binding.loginButtonView.apply {
@@ -127,15 +134,17 @@ class SignupActivity : BaseActivity() {
                         name = binding.fullName.text.toString(),
                         walletId = enteredWalletId
                     ), successHandler = {
-                        //intent to next activity
+                        startActivity(HomeActivity.getIntent(this))
                         dismissProgressDialog()
                     }, errorHandler = {
+                        Log.e("hereee","")
                         Toast.makeText(this, it?.message.toString(), Toast.LENGTH_SHORT).show()
                         dismissProgressDialog()
                     }, httpErrorHandler = {
                         if(it?.message?.contains(getString(R.string.account_already_exists), true) == true) {
                             Toast.makeText(this, R.string.account_already_exists, Toast.LENGTH_SHORT).show()
                         } else {
+                            Log.e("heree","")
                             Toast.makeText(this, it?.message.toString(), Toast.LENGTH_SHORT).show()
                         }
                         dismissProgressDialog()
