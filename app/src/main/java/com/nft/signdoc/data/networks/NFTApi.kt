@@ -1,6 +1,7 @@
 package com.nft.signdoc.data.networks
 
 import com.nft.signdoc.data.networks.request.ClimNFTRequest
+import com.nft.signdoc.data.networks.response.DocumentsListingResponse
 import com.nft.signdoc.data.networks.response.DtoBaseResponse
 import com.nft.signdoc.data.networks.response.DtoMessageResponse
 import com.nft.signdoc.data.networks.response.DtoNFTResponse
@@ -25,4 +26,7 @@ interface NFTApi {
 
     @POST("nfts/{nft_id}/claim")
     suspend fun claimNFT(@Path("nft_id") nftId: String, @Body climNFTRequest: ClimNFTRequest): DtoMessageResponse
+
+    @GET("files")
+    suspend fun getAllDocuments(@Query("owner_id") userId: String): DocumentsListingResponse
 }

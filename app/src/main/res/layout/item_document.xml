@@ -39,22 +39,22 @@
 
 
     </RelativeLayout>
+
     <TextView
         android:id="@+id/docStatusTagTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Draft"
-        android:textSize="15sp"
-        android:paddingRight="10dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="4dp"
-        android:paddingBottom="4dp"
-        android:layout_toRightOf="@id/docDetailLayout"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/docDetailLayout"
         android:background="@drawable/document_status_tag_bg"
+        android:paddingLeft="10dp"
+        android:paddingTop="4dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="4dp"
+        android:text="Draft"
         android:textColor="@color/status_tag_text_color"
-        />
+        android:textSize="15sp" />
 
     <TextView
         android:layout_width="wrap_content"
