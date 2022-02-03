@@ -26,7 +26,7 @@ class AllDocumentsFragment : BaseFragment(R.layout.all_documents_fragment) {
 
 
     private val documentsListingAdapter by lazy {
-        DocumentsListingAdapter()
+        DocumentsListingAdapter(userViewModel.prefs)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -41,6 +41,11 @@ class AllDocumentsFragment : BaseFragment(R.layout.all_documents_fragment) {
 
             ), successHandler = {
                 documentsListingAdapter.setData(it)
+                binding.noRecordTxt.visibility = if (it.isNullOrEmpty())
+                    View.VISIBLE
+                else
+                    View.GONE
+
             }, errorHandler = {
                 Toast.makeText(activity, it?.message.toString(), Toast.LENGTH_SHORT)
                     .show()

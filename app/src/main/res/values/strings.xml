@@ -70,5 +70,8 @@
     <string name="phone_example">Ex. (373) 378 8383</string>
     <string name="email_example">Ex. abc@yourmail.org</string>
 
+    <string name="last_modified_at">Last Modified</string>
+    <string name="no_record">No Record Found</string>
+
 
 </resources>

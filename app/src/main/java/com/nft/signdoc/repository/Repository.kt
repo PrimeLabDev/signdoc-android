@@ -164,7 +164,7 @@ class Repository(
     }
 
     suspend fun getAllDocuments() = safeCallWithHttpError {
-        val allDocumentsResponse = nftApi.getAllDocuments("qqyhIUfU02qvW3TAoGNKX-x")
+        val allDocumentsResponse = nftApi.getAllDocuments(sharePrefs.userId)
         allDocumentsResponse.data
     }
 
