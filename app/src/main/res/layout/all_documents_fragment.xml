@@ -9,4 +9,12 @@
         android:layout_height="wrap_content"
         />
 
+    <TextView
+        android:id="@+id/noRecordTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_record"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textSize="15sp"/>
 </RelativeLayout>

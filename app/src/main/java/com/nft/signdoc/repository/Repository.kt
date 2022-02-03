@@ -163,6 +163,11 @@ class Repository(
         climNftResponse.message
     }
 
+    suspend fun getAllDocuments() = safeCallWithHttpError {
+        val allDocumentsResponse = nftApi.getAllDocuments(sharePrefs.userId)
+        allDocumentsResponse.data
+    }
+
     suspend fun getUserProfile(userId: String) = safeCall {
         val dtoResponse = api.getUserProfile(userId)
         dtoResponse.dtoUserInfo.toDomain()
