@@ -36,6 +36,8 @@ class UserViewModel @Inject constructor(private val repository: Repository, shar
         repository.modifyUser(userId, currentPhone, currentEmail)
     }
 
-
+    fun getAllDocuments() = resultFlow {
+        repository.getAllDocuments()
+    }
 
 }

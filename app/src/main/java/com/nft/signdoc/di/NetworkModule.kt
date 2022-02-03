@@ -29,17 +29,17 @@ class NetworkModule {
     @TransactionUrl
     @Singleton
     @Provides
-    fun provideTransactionUrl() = "https://api.nearlogin.io"
+    fun provideTransactionUrl() = "https://eqxpg9y48j.execute-api.sa-east-1.amazonaws.com"
 
     @ContactUrl
     @Singleton
     @Provides
-    fun provideContactUrl() = "https://api.nearlogin.io"
+    fun provideContactUrl() = "https://eqxpg9y48j.execute-api.sa-east-1.amazonaws.com"
 
     @NFTUrl
     @Singleton
     @Provides
-    fun provideNFTUrl() = "https://api.nearlogin.io"
+    fun provideNFTUrl() = "https://eqxpg9y48j.execute-api.sa-east-1.amazonaws.com"
 
     @Singleton
     @Provides

@@ -19,53 +19,73 @@
         android:layout_marginTop="25dp"
         android:layout_marginLeft="5dp"
         >
+
         <TextView
             android:id="@+id/docNameTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Non disclouser"
-            android:textSize="17sp"
             android:textColor="@color/app_theme_black_color"
+            android:textSize="17sp"
+            android:fontFamily="@font/inter_medium_500"
             />
+
         <TextView
             android:id="@+id/docSenderNameTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="marcus.near"
             android:layout_below="@id/docNameTxt"
-            android:textSize="15sp"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/inter_regular_400"
             android:textColor="@color/sender_name_blue_color"
-            android:includeFontPadding="false"/>
+            android:textSize="15sp" />
 
 
     </RelativeLayout>
+
     <TextView
         android:id="@+id/docStatusTagTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Draft"
-        android:textSize="15sp"
-        android:paddingRight="10dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="4dp"
-        android:paddingBottom="4dp"
-        android:layout_toRightOf="@id/docDetailLayout"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="23dp"
+        android:fontFamily="@font/inter_medium_500"
+        android:layout_toRightOf="@id/docDetailLayout"
         android:background="@drawable/document_status_tag_bg"
+        android:paddingLeft="10dp"
+        android:paddingTop="4dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="4dp"
+        android:text="Draft"
         android:textColor="@color/status_tag_text_color"
-        />
+        android:textSize="15sp" />
 
     <TextView
+        android:id="@+id/updatedDateTag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Last Modified 12/10/22 12:30 PM"
-        android:textSize="14sp"
-        android:textColor="@color/gray_text_color"
         android:layout_below="@id/docDetailLayout"
         android:layout_marginLeft="70dp"
         android:layout_marginTop="4dp"
-        android:includeFontPadding="false"/>
+        android:fontFamily="@font/inter_regular_400"
+        android:includeFontPadding="false"
+        android:text="@string/last_modified_at"
+        android:textColor="@color/gray_text_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/updatedDateTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/docDetailLayout"
+        android:layout_toRightOf="@id/updatedDateTag"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/inter_regular_400"
+        android:layout_marginTop="4dp"
+        android:includeFontPadding="false"
+        android:text="12/10/22 12:30 PM"
+        android:textColor="@color/gray_text_color"
+        android:textSize="14sp" />
 
     <View
         android:layout_width="match_parent"
